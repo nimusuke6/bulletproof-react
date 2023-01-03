@@ -1,0 +1,10 @@
+{
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "editor.defaultFormatter": "rome.rome",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave":{
+      "source.organizeImports": true,
+    },
+    "editor.minimap.enabled": false
+}
