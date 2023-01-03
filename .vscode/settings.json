@@ -1,11 +1,16 @@
 {
-    "typescript.enablePromptUseWorkspaceTsdk": true,
-    "typescript.tsdk": "./node_modules/typescript/lib",
-    "typescript.preferences.importModuleSpecifier": "non-relative",
-    "editor.defaultFormatter": "rome.rome",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave":{
-      "source.organizeImports.rome": true,
-    },
-    "editor.minimap.enabled": false,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.quoteStyle": "double",
+  "css.lint.unknownAtRules": "ignore",
+  "editor.defaultFormatter": "rome.rome",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave":{
+    "source.organizeImports.rome": true,
+  },
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
 }
