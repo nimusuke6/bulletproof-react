@@ -1,7 +1,9 @@
 {
-    "recommendations": [
-        "editorconfig.editorconfig",
-        "ms-ceintl.vscode-language-pack-ja",
-        "rome.rome"
-    ]
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "ms-ceintl.vscode-language-pack-ja",
+    "rome.rome",
+    "bradlc.vscode-tailwindcss",
+    "zixuanchen.vitest-explorer"
+  ]
 }
