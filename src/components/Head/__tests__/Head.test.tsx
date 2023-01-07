@@ -1,17 +1,15 @@
-import { render, waitFor } from '@testing-library/react'
 import { expect, test } from 'vitest'
 
+import { render, waitFor } from '@/test/test-utils'
+
 import { Head } from '../Head'
-import { AppProvider } from '@/providers/app'
 
 test('should add proper page title and meta description', async () => {
   const title = 'Hello World'
   const titleSuffix = ' | Bulletproof React'
   const description = 'This is a description'
 
-  render(<Head title={title} description={description} />, {
-    wrapper: AppProvider,
-  })
+  render(<Head title={title} description={description} />)
   await waitFor(() => expect(document.title).toEqual(title + titleSuffix))
 
   const metaDescription = document.querySelector('meta[name="description"]')
