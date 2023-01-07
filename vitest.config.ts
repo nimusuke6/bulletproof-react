@@ -1,12 +1,13 @@
+import { mergeConfig } from 'vite'
 import { defineConfig } from 'vitest/config'
 
-export default defineConfig({
-  test: {
-    environment: 'jsdom',
-  },
-  resolve: {
-    alias: {
-      '@/': `${__dirname}/src/`,
+import viteConfig from './vite.config'
+
+export default mergeConfig(
+  viteConfig,
+  defineConfig({
+    test: {
+      environment: 'jsdom',
     },
-  },
-})
+  }),
+)
