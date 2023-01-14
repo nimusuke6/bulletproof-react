@@ -1,10 +1,15 @@
+import { useNavigate } from 'react-router-dom'
+
 import logo from '@/assets/logo.svg'
 import { Button } from '@/components/Elements'
 import { Head } from '@/components/Head'
 
 export const Landing = () => {
+  const navigate = useNavigate()
+
   const handleStart = () => {
     // @todo
+    navigate('/auth/register')
   }
 
   return (
