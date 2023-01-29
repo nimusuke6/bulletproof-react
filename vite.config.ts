@@ -9,4 +9,7 @@ export default defineConfig({
       '@/': `${__dirname}/src/`,
     },
   },
+  define: {
+    global: {},
+  },
 })
