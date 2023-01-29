@@ -1,12 +1,33 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { Meta, Story } from '@storybook/react'
 
-import { Button } from '@/components/Elements/Button/Button'
+import { Button, ButtonProps } from './Button'
 
-export default {
-  title: 'Button',
+const meta: Meta = {
+  title: 'Components/Elements/Button',
   component: Button,
-} as ComponentMeta<typeof Button>
+  parameters: {
+    controls: { expanded: true },
+  },
+}
 
-const Template: ComponentStory<typeof Button> = () => <Button />
+export default meta
 
-export const Default = Template.bind({})
+const Template: Story<ButtonProps> = (props) => <Button {...props} />
+
+export const Primary = Template.bind({})
+Primary.args = {
+  children: 'Primary Button',
+  variant: 'primary',
+}
+
+export const Inverse = Template.bind({})
+Inverse.args = {
+  children: 'Inverse Button',
+  variant: 'inverse',
+}
+
+export const Danger = Template.bind({})
+Danger.args = {
+  children: 'Danger Button',
+  variant: 'danger',
+}
